@@ -1,0 +1,20 @@
+:root{
+    --primary-color: #FFFFFF;
+    --secund-color: #A7F46A;
+    --background-color-1: #1B1AFF;
+    --background-color-2: #FFFFFF;
+    --background-color-footer: #101010;
+    --text-light: #FFFFFF;
+    --text-black: #101010;
+    --text-blue: #97BAFF;
+    --text-gray: #757B8A;
+    --text-green: #A7F46A;
+    --text-neutro: #EDEDED;
+    --texto-footer: #878787;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
