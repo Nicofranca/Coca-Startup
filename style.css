@@ -11,7 +11,16 @@
     --text-green: #A7F46A;
     --text-neutro: #EDEDED;
     --texto-footer: #878787;
-    --font: 'Urbanist', sans-serif;
+    --font:'Urbanist', sans-serif;
+
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-display: auto;
+  font-weight: 200;
+  src: url(@fontsource/urbanist/files/urbanist-latin-200-normal.woff) format('woff'), url(@fontsource/urbanist/files/urbanist-latin-200-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
 /* Reset básico */
@@ -29,16 +38,156 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.3rem;
     position: relative;
+    background-color: var(--background-color-1);
+    outline: none;
 }
 
-.logo-container {
+.logo-section{
     display: flex;
     align-items: center;
-    gap: 1rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-name {
+    color: var(--text-light);
+    padding-left: 0.5rem;
+}
+
+.menu-mobile button {
+    cursor: pointer;
+    border: none;
+    all: unset;
+}
+
+/* Hero */
+
+.hero {
+    background-color: var(--background-color-1);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Primeira parte - World Best Startup */
+.primera-parte {
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.primera-parte img[alt="Linha decorativa"]{
+    opacity: 1;
+    height: 2rem;
+    width: 4rem;
+}
+
+.primera-parte p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 
+
+/* Seção de sobreposição com imagem e título */
+.hero-sobreposicao {
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.hero-sobreposicao img {
+    height: auto;
+    position: absolute;
+    top: 5px;
+    max-width: 21.063rem;
+    max-height: 15.375rem;
+    left: 1.5rem;
+    z-index: 1;
+}
+
+.hero-sobreposicao h2 {
+    position: absolute;
+    font-size: 4.5rem;
+    font-weight: 500;
+    color: var(--text-light);
+    line-height: 4.3rem;
+    padding-top: 47%;
+    padding-left: 0.5rem;
+    max-width: 100%;
+    letter-spacing: -1px;
+    z-index: 1;
+}
+
+/* Conteúdo do hero */
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 100px;
+    padding-top: 10rem;
+}
+
+.hero-conteudo p:first-child {
+    color: white;
+    padding-top: 0.5rem;
+    padding-left: 0.6rem;
+    font-size: 0.87rem;
+    font-weight: 540;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    max-width: 90%;
+    opacity: 0.9;
+}
+
+/* Botão Meet The Expert */
+.hero-conteudo .btn {
+    all: unset;
+    background-color: var(--secund-color);
+    color: #1a1a1a;
+    margin-left: 0.6rem;
+    padding: 1.1rem 1.6rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.hero-conteudo img[alt="Seta para direita acima"] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Seção inferior com seta e texto */
+.hero-conteudo img[alt="Seta para direita"] {
+    width: 60px;
+    height: auto;
+    align-self: flex-start;
+    margin: 1rem 0;
+    filter: brightness(0) invert(1);
+}
+
+.hero-conteudo p:last-child {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 350px;
+    opacity: 0.8;
+}
