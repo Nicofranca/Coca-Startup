@@ -1,16 +1,44 @@
+:root{
+    --primary-color: #FFFFFF;
+    --secund-color: #A7F46A;
+    --background-color-1: #1B1AFF;
+    --background-color-2: #FFFFFF;
+    --background-color-footer: #101010;
+    --card-1: #E0FECD;
+    --card-2: #FFF1ED;
+    --card-3: #F0F0FF;
+    --text-light: #FFFFFF;
+    --text-black: #101010;
+    --text-blue: #97BAFF;
+    --text-gray: #757B8A;
+    --text-green: #A7F46A;
+    --text-neutro: #EDEDED;
+    --texto-footer: #878787;
+    --font:'Urbanist', sans-serif;
+}
+
 body {
     margin: 0;
     line-height: normal;
+	position: relative;
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	text-align: left;
+  	font-size: 1rem;
+  	color: var(--primary-color);
+  	font-family: Inter;
 }
 
 .coca-icon {
   	position: absolute;
-  	height: 31.8%;
-  	width: 61.42%;
-  	top: 32.56%;
-  	right: 0.01%;
-  	bottom: 35.64%;
-  	left: 38.57%;
+  	height: 32%;
+  	width: 61.5%;
+  	top: 32.5%;
+  	bottom: 35.6%;
+  	left: 38.5%;
   	max-width: 100%;
   	overflow: hidden;
   	max-height: 100%;
@@ -19,10 +47,9 @@ body {
   	position: absolute;
   	height: 63.6%;
   	width: 30%;
-  	top: 14.39%;
+  	top: 14.4%;
   	right: 70%;
-  	bottom: 22.01%;
-  	left: 0%;
+  	bottom: 22%;
   	max-width: 100%;
   	overflow: hidden;
   	max-height: 100%;
@@ -32,12 +59,12 @@ body {
   	top: 0.75rem;
   	left: 1.25rem;
   	width: 7.5rem;
-  	height: 3.538rem;
+  	height: 3.54rem;
 }
 .align-justify-icon {
   	position: absolute;
   	top: 1.75rem;
-  	left: 20.688rem;
+  	left: 20.7rem;
   	width: 1.5rem;
   	height: 1.5rem;
   	overflow: hidden;
@@ -46,14 +73,14 @@ body {
   	position: absolute;
   	top: 11.875rem;
   	left: 2.375rem;
-  	width: 21.063rem;
+  	width: 21.07rem;
   	height: 15.375rem;
   	object-fit: cover;
 }
 .frame-child {
-  	width: 1.438rem;
+  	width: 1.44rem;
   	position: relative;
-  	height: 1.813rem;
+  	height: 1.8rem;
 }
 .world-best-startup {
   	position: relative;
@@ -72,7 +99,7 @@ body {
   	position: relative;
   	border-top: 1px solid #fff;
   	box-sizing: border-box;
-  	height: 0.063rem;
+  	height: 0.06rem;
 }
 .frame-parent {
   	position: absolute;
@@ -89,24 +116,24 @@ body {
 }
 .best-tech-startup-container {
   	position: absolute;
-  	top: 21.438rem;
-  	left: 1.313rem;
+  	top: 21.44rem;
+  	left: 1.3rem;
   	font-size: 5rem;
   	letter-spacing: -1px;
   	line-height: 90%;
   	display: inline-block;
   	font-family: Urbanist;
-  	width: 21.188rem;
+  	width: 21.19rem;
 }
 .coca-is-a {
   	position: absolute;
   	top: 36.5rem;
-  	left: 1.313rem;
+  	left: 1.3rem;
   	font-size: 0.875rem;
   	line-height: 150%;
   	display: inline-block;
-  	color: #ededed;
-  	width: 19.438rem;
+  	color: var(--text-light);
+  	width: 19.4rem;
 }
 .icon {
   	width: 1.25rem;
@@ -131,10 +158,10 @@ body {
 .button {
   	position: absolute;
   	top: 42rem;
-  	left: 1.313rem;
+  	left: 1.3rem;
   	border-radius: 8px;
-  	background-color: #a7f46a;
-  	width: 13.438rem;
+  	background-color: var(--secund-color);
+  	width: 13.4rem;
   	display: flex;
   	flex-direction: row;
   	align-items: center;
@@ -143,12 +170,12 @@ body {
   	box-sizing: border-box;
   	gap: 0.75rem;
   	text-align: center;
-  	color: #101010;
+  	color: var(--text-black);
 }
 .today-were-a {
   	position: absolute;
   	top: 0rem;
-  	left: 6.938rem;
+  	left: 6.9rem;
   	line-height: 160%;
   	font-weight: 500;
   	display: inline-block;
@@ -156,23 +183,23 @@ body {
 }
 .group-child {
   	position: absolute;
-  	top: 1.313rem;
+  	top: 1.3rem;
   	left: 0rem;
-  	width: 5.188rem;
+  	width: 5.1rem;
   	height: 0rem;
 }
 .today-were-a-team-of-200-wh-parent {
   	position: absolute;
   	top: 49.625rem;
-  	left: 1.313rem;
-  	width: 20.688rem;
+  	left: 1.3rem;
+  	width: 20.7rem;
   	height: 6.5rem;
   	color: #97baff;
 }
 .hero {
-  	width: 23.438rem;
+  	width: 23.4rem;
   	position: relative;
-  	background-color: #1b1aff;
+  	background-color: var(--background-color-1);
   	height: 59.813rem;
   	overflow: hidden;
   	flex-shrink: 0;
@@ -190,7 +217,7 @@ body {
   	line-height: 160%;
   	font-weight: 500;
   	font-family: Inter;
-  	color: #757b8a;
+  	color: var(--text-gray);
   	display: inline-block;
 }
 .delivering-tech-solutions-parent {
@@ -210,8 +237,8 @@ body {
   	top: 0rem;
   	left: 0rem;
   	border-radius: 16px;
-  	width: 20.438rem;
-  	height: 23.063rem;
+  	width: 20.4rem;
+  	height: 23.06rem;
   	object-fit: cover;
 }
 .group-inner {
@@ -220,16 +247,16 @@ body {
   	left: 0rem;
   	border-radius: 16px;
   	background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0));
-  	width: 20.438rem;
-  	height: 16.938rem;
+  	width: 20.4rem;
+  	height: 16.9rem;
   	opacity: 0.6;
 }
 .button1 {
   	position: absolute;
-  	top: 18.063rem;
-  	left: 1.938rem;
+  	top: 18rem;
+  	left: 1.9rem;
   	border-radius: 8px;
-  	background-color: #a7f46a;
+  	background-color: var(--secund-color);
   	width: 15.75rem;
   	display: flex;
   	flex-direction: row;
@@ -242,31 +269,31 @@ body {
 }
 .leveraging-tech-to {
   	position: absolute;
-  	top: 4.188rem;
-  	left: 1.938rem;
+  	top: 4.1rem;
+  	left: 1.9rem;
   	font-size: 2rem;
   	line-height: 110%;
   	display: inline-block;
   	font-family: Urbanist;
-  	color: #fff;
-  	width: 16.813rem;
+  	color: var(--text-light);
+  	width: 16.8rem;
 }
 .ready-for-future {
   	position: absolute;
-  	top: 2.063rem;
-  	left: 1.938rem;
+  	top: 2rem;
+  	left: 1.9rem;
   	font-size: 0.875rem;
   	line-height: 160%;
   	text-transform: uppercase;
   	font-weight: 500;
-  	color: #a7f46a;
+  	color: var(--text-green);
 }
 .rectangle-parent {
   	position: absolute;
   	top: 16.875rem;
   	left: 1.5rem;
-  	width: 20.438rem;
-  	height: 23.063rem;
+  	width: 20.4rem;
+  	height: 23rem;
   	font-size: 1rem;
 }
 .child {
@@ -274,7 +301,7 @@ body {
   	top: 0rem;
   	left: 0rem;
   	border-radius: 16px;
-  	background-color: #fff1ed;
+  	background-color: var(--card-2);
   	width: 10rem;
   	height: 11.5rem;
 }
@@ -284,7 +311,7 @@ body {
   	left: 1rem;
   	line-height: 150%;
   	display: inline-block;
-  	width: 8.063rem;
+  	width: 8rem;
 }
 .see-our-workflow {
   	position: absolute;
@@ -292,11 +319,11 @@ body {
   	left: 0rem;
   	line-height: 110%;
   	display: inline-block;
-  	width: 6.438rem;
+  	width: 6.4rem;
 }
 .arrow-up-right-icon2 {
   	position: absolute;
-  	top: 1.563rem;
+  	top: 1.5rem;
   	left: 7rem;
   	width: 1.5rem;
   	height: 1.5rem;
@@ -313,17 +340,16 @@ body {
 }
 .div {
   	position: absolute;
-  	top: 40.938rem;
-  	left: 11.938rem;
+  	top: 40.9rem;
+  	left: 11.9rem;
   	width: 10rem;
   	height: 11.5rem;
 }
 .item {
   	position: absolute;
-  	top: 0rem;
-  	left: 0rem;
+
   	border-radius: 16px;
-  	background-color: #e0fecd;
+  	background-color: var(--card-1);
   	width: 10rem;
   	height: 11.5rem;
 }
@@ -333,23 +359,22 @@ body {
   	left: 1rem;
   	line-height: 150%;
   	display: inline-block;
-  	width: 7.813rem;
+  	width: 7.8rem;
 }
 .div1 {
   	position: absolute;
-  	top: 40.938rem;
+  	top: 40.9rem;
   	left: 1.5rem;
   	width: 10rem;
   	height: 11.5rem;
 }
 .inner {
   	position: absolute;
-  	top: 0rem;
-  	left: 0rem;
+
   	border-radius: 16px;
-  	background-color: #f0f0ff;
-  	width: 20.438rem;
-  	height: 11.438rem;
+  	background-color: var(--card-3);
+  	width: 20.4rem;
+  	height: 11.4rem;
 }
 .our-team-members {
   	position: absolute;
@@ -361,48 +386,46 @@ body {
 }
 .meet-our-expert {
   	position: absolute;
-  	top: 0rem;
-  	left: 0rem;
   	line-height: 110%;
   	display: inline-block;
-  	width: 15.563rem;
+  	width: 15.5rem;
 }
 .arrow-up-right-icon4 {
   	position: absolute;
-  	top: 0.313rem;
-  	left: 17.438rem;
+  	top: 0.3rem;
+  	left: 17.4rem;
   	width: 1.5rem;
   	height: 1.5rem;
   	overflow: hidden;
 }
 .button4 {
   	position: absolute;
-  	top: 8.313rem;
+  	top: 8.3rem;
   	left: 1rem;
-  	width: 18.938rem;
-  	height: 2.188rem;
+  	width: 18.9rem;
+  	height: 2.2rem;
   	font-size: 2rem;
   	font-family: Urbanist;
 }
 .div2 {
   	position: absolute;
-  	top: 53.438rem;
+  	top: 53.4rem;
   	left: 1.5rem;
-  	width: 20.438rem;
-  	height: 11.438rem;
+  	width: 20.4rem;
+  	height: 11.4rem;
 }
 .about-us {
-  	width: 23.438rem;
+  	width: 23.4rem;
   	position: relative;
-  	background-color: #fff;
+  	background-color: var(--primary-color);
   	height: 69.625rem;
   	overflow: hidden;
   	flex-shrink: 0;
   	font-size: 0.75rem;
-  	color: #101010;
+  	color: var(--text-black);
 }
 .how-we-plan {
-  	width: 20.688rem;
+  	width: 20.7rem;
   	position: relative;
   	font-size: 2.5rem;
   	line-height: 110%;
@@ -414,7 +437,7 @@ body {
   	position: relative;
   	line-height: 160%;
   	font-weight: 500;
-  	color: #757b8a;
+  	color: var(--text-gray);
   	display: inline-block;
 }
 .check-item-text-child {
@@ -438,7 +461,7 @@ body {
   	gap: 0.75rem;
 }
 .award-winning-web {
-  	width: 17.563rem;
+  	width: 17.5rem;
   	position: relative;
   	line-height: 160%;
   	font-weight: 500;
@@ -446,7 +469,7 @@ body {
   	flex-shrink: 0;
 }
 .competitive-rates-for {
-  	width: 18.563rem;
+  	width: 18.5rem;
   	position: relative;
   	line-height: 160%;
   	font-weight: 500;
@@ -462,7 +485,7 @@ body {
 }
 .how-we-plan-to-disrupt-the-ind-parent {
   	position: absolute;
-  	top: 26.813rem;
+  	top: 26.8rem;
   	left: 1.5rem;
   	display: flex;
   	flex-direction: column;
@@ -474,41 +497,41 @@ body {
   	position: absolute;
   	top: 0rem;
   	left: 0rem;
-  	width: 23.438rem;
-  	height: 22.125rem;
+  	width: 23.4rem;
+  	height: 17.125rem;
   	object-fit: cover;
 }
 .statistic-light {
   	position: absolute;
   	top: 16rem;
   	left: 0rem;
-  	width: 23.438rem;
-  	height: 9.938rem;
+  	width: 23.4rem;
+  	height: 9.9rem;
   	object-fit: cover;
 }
 .features {
-  	width: 23.438rem;
+  	width: 23.4rem;
   	position: relative;
-  	background-color: #fff;
+  	background-color: var(--primary-color);
   	height: 59.625rem;
   	overflow: hidden;
   	flex-shrink: 0;
-  	color: #101010;
+  	color: var(--text-black);
 }
 .why-we-are {
-  	width: 20.313rem;
+  	width: 20.3rem;
   	position: relative;
   	line-height: 110%;
   	display: inline-block;
 }
 .with-us-you {
-  	width: 20.313rem;
+  	width: 20.3rem;
   	position: relative;
   	font-size: 1rem;
   	line-height: 160%;
   	font-weight: 500;
   	font-family: Inter;
-  	color: #757b8a;
+  	color: var(--text-gray);
   	display: inline-block;
 }
 .heading-and-subheading {
@@ -534,7 +557,7 @@ body {
   	line-height: 160%;
   	font-weight: 500;
   	font-family: Inter;
-  	color: #757b8a;
+  	color: var(--text-gray);
 }
 .number-and-text {
   	display: flex;
@@ -543,10 +566,10 @@ body {
   	justify-content: flex-start;
 }
 .content1 {
-  	width: 20.563rem;
+  	width: 20.5rem;
   	box-shadow: 20px 40px 80px rgba(45, 51, 81, 0.12);
   	border-radius: 16px;
-  	background-color: #fff;
+  	background-color: var(--primary-color);
   	height: 6rem;
   	display: flex;
   	flex-direction: row;
@@ -560,7 +583,7 @@ body {
 }
 .contenr {
   	position: absolute;
-  	top: 4.063rem;
+  	top: 4rem;
   	left: 1.5rem;
   	display: flex;
   	flex-direction: column;
@@ -570,9 +593,9 @@ body {
 }
 .image-icon1 {
   	position: absolute;
-  	top: 32.688rem;
+  	top: 32.7rem;
   	left: 1.5rem;
-  	width: 20.438rem;
+  	width: 20.4rem;
   	height: 21.25rem;
   	object-fit: cover;
 }
@@ -601,7 +624,6 @@ body {
 .component-1 {
   	position: absolute;
   	top: 4.875rem;
-  	left: 0rem;
   	border-radius: 4px;
   	background-color: #eafae5;
   	display: flex;
@@ -615,10 +637,9 @@ body {
 .b2 {
   	position: absolute;
   	top: calc(50% - 51px);
-  	left: 0%;
   	font-size: 1.5rem;
   	line-height: 120%;
-  	color: #101010;
+  	color: var(--text-black);
 }
 .income-in-this-perio-parent {
   	width: 7.75rem;
@@ -627,12 +648,12 @@ body {
 }
 .overview-mobile {
   	position: absolute;
-  	top: 45.188rem;
-  	left: 12.688rem;
+  	top: 45.2rem;
+  	left: 12.7rem;
   	box-shadow: 20px 40px 80px rgba(45, 51, 81, 0.12);
   	border-radius: 8px;
-  	background-color: #fff;
-  	width: 8.688rem;
+  	background-color: var(--primary-color);
+  	width: 8.7rem;
   	height: 8.25rem;
   	overflow: hidden;
   	display: flex;
@@ -642,12 +663,12 @@ body {
   	padding: 0.75rem;
   	box-sizing: border-box;
   	font-size: 0.75rem;
-  	color: #808d9e;
+  	color: var(--text-gray);
   	font-family: Inter;
 }
 .icon-play {
   	position: absolute;
-  	top: 41.438rem;
+  	top: 41.4rem;
   	left: 9.875rem;
   	border-radius: 100px;
   	width: 3.75rem;
@@ -655,25 +676,25 @@ body {
   	object-fit: cover;
 }
 .why-us {
-  	width: 23.438rem;
+  	width: 23.4rem;
   	position: relative;
-  	background-color: #fff;
+  	background-color: var(--primary-color);
   	height: 58.375rem;
   	overflow: hidden;
   	flex-shrink: 0;
   	font-size: 2.5rem;
-  	color: #101010;
+  	color: var(--text-black);
   	font-family: Urbanist;
 }
 .brand-child {
-  	width: 8.256rem;
+  	width: 8.25rem;
   	position: relative;
-  	height: 5.625rem;
+  	height: 5.6rem;
   	overflow: hidden;
   	flex-shrink: 0;
 }
 .brand-item {
-  	width: 8.256rem;
+  	width: 8.25rem;
   	position: relative;
   	height: 5.625rem;
   	overflow: hidden;
@@ -683,7 +704,7 @@ body {
 .brand {
   	position: absolute;
   	top: 2.875rem;
-  	left: -0.812rem;
+  	left: -0.8rem;
   	display: flex;
   	flex-direction: row;
   	align-items: flex-start;
@@ -701,21 +722,21 @@ body {
   	gap: 0.125rem;
 }
 .brands {
-  	width: 23.438rem;
+  	width: 23.4rem;
   	position: relative;
-  	background-color: #fff;
-  	height: 19.063rem;
+  	background-color: var(--primary-color);
+  	height: 19rem;
   	overflow: hidden;
   	flex-shrink: 0;
 }
 .customer-is-our {
-  	width: 19.688rem;
+  	width: 19.7rem;
   	position: relative;
   	line-height: 110%;
   	display: inline-block;
 }
 .we-survey-all {
-  	width: 19.688rem;
+  	width: 19.7rem;
   	position: relative;
   	font-size: 1rem;
   	line-height: 160%;
@@ -727,7 +748,7 @@ body {
   	position: absolute;
   	top: 3.5rem;
   	left: 1.875rem;
-  	width: 19.688rem;
+  	width: 19.7rem;
   	display: flex;
   	flex-direction: column;
   	align-items: flex-start;
@@ -736,10 +757,10 @@ body {
 }
 .image-icon2 {
   	position: absolute;
-  	top: 15.063rem;
-  	left: 0.563rem;
+  	top: 15rem;
+  	left: 0.5rem;
   	width: 22.275rem;
-  	height: 20.513rem;
+  	height: 20.5rem;
   	object-fit: contain;
 }
 .amazing-experience-working {
@@ -756,7 +777,7 @@ body {
   	position: relative;
   	font-size: 1rem;
   	line-height: 1.5rem;
-  	color: #ededed;
+  	color: var(--text-light);
 }
 .name {
   	display: flex;
@@ -769,7 +790,7 @@ body {
   	width: 0.75rem;
   	position: relative;
   	border-radius: 50%;
-  	background-color: #fff;
+  	background-color: var(--primary-color);
   	height: 0.75rem;
 }
 .slidebar-item {
@@ -809,7 +830,7 @@ body {
 .testimonials {
   	width: 23.438rem;
   	position: relative;
-  	background-color: #1b1aff;
+  	background-color: var(--background-color-1);
   	height: 55.188rem;
   	overflow: hidden;
   	flex-shrink: 0;
@@ -832,17 +853,16 @@ body {
   	left: 2rem;
   	line-height: 150%;
   	font-weight: 500;
-  	color: #878787;
+  	color: var(--text-gray);
   	display: inline-block;
-  	width: 19.563rem;
+  	width: 19.5rem;
 }
 .button5 {
   	position: absolute;
   	top: 3.5rem;
-  	left: 0rem;
   	border-radius: 100px;
-  	background-color: #1b1aff;
-  	width: 8.938rem;
+  	background-color: var(--background-color-1);
+  	width: 8.9rem;
   	height: 3.5rem;
   	display: flex;
   	flex-direction: row;
@@ -853,27 +873,23 @@ body {
 }
 .enter-your-email {
   	position: absolute;
-  	top: 0rem;
-  	left: 0rem;
   	line-height: 150%;
   	font-weight: 500;
-  	color: #878787;
+  	color: var(--text-gray);
   	text-align: left;
 }
 .divider {
   	position: absolute;
-  	top: 2.469rem;
-  	left: -0.031rem;
+  	top: 2.4rem;
   	border-top: 1px solid #757b8a;
   	box-sizing: border-box;
   	width: 20.5rem;
-  	height: 0.063rem;
 }
 .subs {
   	position: absolute;
-  	top: 14.438rem;
+  	top: 14.4rem;
   	left: 2rem;
-  	width: 20.438rem;
+  	width: 20.4rem;
   	height: 7rem;
   	text-align: center;
 }
@@ -950,33 +966,21 @@ body {
   	position: absolute;
   	top: 26.125rem;
   	left: 1.5rem;
-  	width: 20.438rem;
+  	width: 20.4rem;
   	display: flex;
   	flex-direction: column;
   	align-items: center;
   	justify-content: flex-start;
   	gap: 3.5rem;
   	font-size: 0.875rem;
-  	color: #757b8a;
+  	color: var(--text-gray);
 }
 .footer {
   	width: 23.438rem;
   	position: relative;
-  	background-color: #101010;
+  	background-color: var(--text-black);
   	height: 39.125rem;
   	overflow: hidden;
   	flex-shrink: 0;
-}
-.landing-regular-startup-resp {
-  	position: relative;
-  	width: 100%;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	justify-content: flex-start;
-  	text-align: left;
-  	font-size: 1rem;
-  	color: #fff;
-  	font-family: Inter;
 }
 
