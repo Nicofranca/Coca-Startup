@@ -1,209 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coca-Startup</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" />
 </head>
 <body>
-    <header class="header">
-        <div class="logo-section">
-            <img src="imagens/Logo-ste.svg" alt="imagem logo">
-            <img src="imagens/coca.svg" alt="Nome da empresa" class="site-name">
-        </div>
+	<!--USAR ORGANIZAÇÃO B-E-M-->
+	<!--Block-->
+	<!--Entidade-->
+	<!--Modify-->
 
-        <div class="menu-section">
-            <div class="menu-mobile">
-                <button id="menu-alternado" aria-label="Abrir menu mobile"><img src="imagens/Menu-mobile.png" alt="Menu alternado"></button>
-            </div>
-        </div>
-            
-    </header>
+	<header class="header">
+		<div class="header__logo">
+			<img class="header__logo-image header__logo-image--coca" alt="" src="imagens/coca.svg">
+			<img class="header__logo-image header__logo-image--main" alt="" src="imagens/Logo.svg">
+		</div>
+		<img class="header__menu-icon" alt="" src="imagens/menu-hamburguer.svg">
+	</header>
 
-    <main>
-        <section class="hero">
-            <div class="primera-parte">
-                <img src="imagens/Asterisco.svg" alt="Asterisco">
-                <p>World Best Startup </p>
-                <img src="imagens/Line.svg" alt="Linha decorativa">
-            </div>
-            <div class="hero-sobreposicao">
-                <img src="imagens/cyborg-hand.png" alt="Mão robótica">
-                <h2>Best Tech Startup Ever</h2>
-            </div>
-            <div class="hero-conteudo">
-                <p>Coca is a startup that's making the world a better place! We've been working on our mission since 2021</p>
-                <button class="btn">Meet The Expert <img src="imagens/arrow-up-right.svg" alt="Seta para direita acima"></button>
-                <div class="hero-conteudo-seta">
-                    <img class="item" src="imagens/arrow-right.png" alt="Seta para direita">
-                    <p class="item">Today, we're a team of 200+ who are building the future together by using cutting-edge technology</p>    
-                </div>
-            </div>
-        </section>
+	<div class="hero">
+		<img class="hero__background-image" alt="" src="imagens/cyborg-hand.png">
+		<div class="hero__slogan">
+			<div class="hero__slogan-content">
+				<img class="hero__slogan-icon" alt="" src="imagens/Asterisco.svg">
+				<div class="hero__slogan-text">World Best Startup</div>
+			</div>
+			<div class="hero__slogan-frame"></div>
+		</div>
+		<div class="hero__headline">
+			<p class="hero__headline-text">Best Tech</p>
+			<p class="hero__headline-text">Startup Ever</p>
+		</div>
+		<b class="hero__description">Coca is a startup that's making the world a better place! We've been working on our mission since 2021</b>
+		<div class="hero__button">
+			<div class="hero__button-padding"></div>
+			<b class="hero__button-text">Meet The Expert</b>
+			<img class="hero__button-arrow" alt="" src="imagens/arrow-up-right.svg">
+		</div>
+		<div class="hero__info-under">
+			<div class="hero__info-text">Today, we're a team of 200+ who are building the future together by using cutting-edge technology</div>
+			<img class="hero__info-arrow" alt="" src="imagens/arrow-right.svg">
+		</div>
+	</div>
 
-        <section class="about-us">
-            <h2>Delivering tech solutions</h2>
-            <p>We are a team of 20+ who are passionate about making the world a better place.</p>
-            <div class="card-container">
-                <div class="card hero-card">
-                    <img src="imagens/Imagem-ITexperence.png" alt="Pessoa com oculos de realidade virtual e objeto de robotica">
-                    <div class="content">
-                        <p>READY FOR FUTURE</p>
-                    <h3>Leveraging tech to drive a better IT experience</h3>
-                    <button class="btn btn-IT">See Incredible Work <img src="imagens/arrow-up-right.png" alt="Seta para direita acima"></button>
+	<div class="about-us">
+		<div class="about-us__intro">
+			<b class="about-us__intro-title">Delivering tech solutions</b>
+			<div class="about-us__intro-description">We are a team of 20+ who are passionate about making the world a better place.</div>
+		</div>
+		<div class="about-us__card about-us__card--main">
+			<img class="about-us__card-image" alt="" src="imagens/Imagem-ITexperence.png">
+			<div class="about-us__card-overlay"></div>
+			<div class="about-us__card-button">
+				<div class="about-us__card-icon"></div>
+				<b class="about-us__card-text">See Incredible Work</b>
+				<img class="about-us__card-arrow" alt="" src="imagens/arrow-up-right.svg">
+			</div>
+			<b class="about-us__card-title">Leveraging tech to drive a better IT experience</b>
+			<div class="about-us__card-subtitle">Ready for future</div>
+		</div>
+		<div class="about-us__card about-us__card--workflow">
+			<div class="about-us__card-background"></div>
+			<div class="about-us__card-description">It's a must to that we would like to share our workflow to believe you</div>
+			<div class="about-us__card-button">
+				<b class="about-us__card-text">See our workflow</b>
+				<img class="about-us__card-arrow" alt="" src="imagens/arrow-up-right.svg">
+			</div>
+		</div>
+		<div class="about-us__card about-us__card--blog">
+			<div class="about-us__card-background"></div>
+			<div class="about-us__card-description">We have share our journe and some story</div>
+			<div class="about-us__card-button">
+				<b class="about-us__card-text">Read our blog</b>
+				<img class="about-us__card-arrow" alt="" src="imagens/arrow-up-right.svg">
+			</div>
+		</div>
+		<div class="about-us__card about-us__card--team">
+			<div class="about-us__card-background"></div>
+			<div class="about-us__card-description">2,000+ our team members around the world who create incredible and amazing projects</div>
+			<div class="about-us__card-button">
+				<b class="about-us__card-text">Meet Our Expert</b>
+				<img class="about-us__card-arrow" alt="" src="imagens/arrow-up-right.svg">
+			</div>
+		</div>
+	</div>
 
-                    </div>
-                </div>
+	<div class="features">
+		<div class="features__content">
+			<b class="features__title">How we plan to disrupt the industry</b>
+			<div class="features__description">We're based in NYC, which is home to so many great companies and communities, but it's also where we started out as a bootstrapped team of two people working from their apartments.</div>
+			<div class="features__list">
+				<div class="features__item">
+					<img class="features__item-icon" alt="" src="imagens/Verificar.svg">
+					<div class="features__item-text">Agile web design and development methodology</div>
+				</div>
+				<div class="features__item">
+					<img class="features__item-icon" alt="" src="imagens/Verificar.svg">
+					<div class="features__item-text">Award winning web solutions and sites</div>
+				</div>
+				<div class="features__item">
+					<img class="features__item-icon" alt="" src="imagens/Verificar.svg">
+					<div class="features__item-text">Competitive rates for web design and development talent</div>
+				</div>
+			</div>
+		</div>
+		<img class="features__image features__image--sales" alt="" src="imagens/Sales - Light.svg">
+		<img class="features__image features__image--statistic" alt="" src="imagens/Statistic - Light.svg">
+	</div>
 
-                <div class="card card-verde">
-                    <p>We have share our journe and some story</p>
-                    <h3>Read our blog</h3>
-                    <img src="imagens/arrow-up-right.png" alt="Seta para direita acima">
-                </div>
+	<div class="why-us">
+		<div class="why-us__content">
+			<div class="why-us__header">
+				<b class="why-us__title">Why we are different from other startups in this space</b>
+				<div class="why-us__description">With us you can create a mobile app for your business in 2 weeks as well as create a website for your business in 2 days.</div>
+			</div>
+			<div class="why-us__info">
+				<img class="why-us__info-icon" alt="" src="imagens/pessoas.svg">
+				<div class="why-us__info-data">
+					<b class="why-us__info-number">1.289</b>
+					<div class="why-us__info-text">Our Remote Team</div>
+				</div>
+			</div>
+		</div>
+		<img class="why-us__image" alt="" src="imagens/Imagem-visitantes.png">
+		<div class="why-us__overview">
+			<div class="why-us__overview-content">
+				<div class="why-us__overview-label">Total Visitors</div>
+				<div class="why-us__overview-growth">
+					<img class="why-us__overview-arrow" alt="" src="imagens/arrow-up.png">
+					<b class="why-us__overview-percentage">37.8%</b>
+				</div>
+				<b class="why-us__overview-value">$8,901</b>
+			</div>
+		</div>
+		<img class="why-us__play-icon" alt="" src="imagens/Play.svg">
+	</div>
 
-                <div class="card card-rosa">
-                    <p>It’s a must to that we would like to share our workflow to believe you</p>
-                    <h3>See our workflow</h3>
-                    <img src="imagens/arrow-up-right.png" alt="Seta para direita acima">
-                </div>
+	<div class="brands">
+		<div class="brands__row brands__row--top">
+			<img class="brands__logo" alt="" src="imagens/Uber.svg">
+			<img class="brands__logo" alt="" src="imagens/Jeep.png">
+			<img class="brands__logo" alt="" src="imagens/Amazon.png">
+		</div>
+		<div class="brands__row brands__row--bottom">
+			<img class="brands__logo" alt="" src="imagens/Bitcoin.png">
+			<img class="brands__logo" alt="" src="imagens/HubSpot.png">
+			<img class="brands__logo" alt="" src="imagens/Stripe.png">
+		</div>
+	</div>
 
-                <div class="card card-roxo">
-                    <p>2,000+ our team members around the world who create incredible and amazing projects</p>
-                    <h3>Meet Our Expert</h3>
-                    <img src="imagens/arrow-up-right.png" alt="Seta para direita acima">
-                </div>
-            </div>
-        </section>
+	<div class="testimonials">
+		<div class="testimonials__header">
+			<b class="testimonials__title">Customer is Our Top Priority</b>
+			<div class="testimonials__description">We survey all of our clients, the results of which go directly to our CEO.</div>
+		</div>
+		<img class="testimonials__image" alt="" src="imagens/Testemunha.svg">
+		<div class="testimonials__content">
+			<b class="testimonials__quote">"Amazing experience working together Coca Team. They are very passionate."</b>
+			<div class="testimonials__author">
+				<div class="testimonials__author-info">
+					<b class="testimonials__author-name">— Suaka Marga Satwa</b>
+					<div class="testimonials__author-position">Product Manager, Qnet</div>
+				</div>
+				<div class="testimonials__pagination">
+					<div class="testimonials__pagination-dot testimonials__pagination-dot--active"></div>
+					<div class="testimonials__pagination-dot"></div>
+					<div class="testimonials__pagination-dot"></div>
+					<div class="testimonials__pagination-dot"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-        <section class="features">
-            <div class="vendas">
-                <div class="grafico">
-                    <img src="imagens/Sales - Light.png" alt="Grafico de Vendas entre nosso produto e o competidor">
-                </div>
-                <div class="vendas-marketing">
-                    <div class="divisao-vendas">
-                        <p>Sales</p>
-                        <h4>$31,092</h4>
-                        <img src="imagens/arrow-up.png" alt="Seta para cima"><span>4.2%</span>
-                        <span>from last year</span>
-                    </div>
-                    <div class="divisao-marketing">
-                        <p>Marketing</p>
-                        <h4>$29,128</h4>
-                        <img src="imagens/arrow-up.png" alt="Seta para cima"><span>2.1%</span>
-                        <span>from last year</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="planejamento">
-                <h2>How we plan to disrupt the industry</h2>
-                <p>We're based in NYC, which is home to so many great companies and communities, but it's also where we started out as a bootstrapped team of two people working from their apartments. </p>
-                <div class="diferenciais">
-                    <div class="diferenciais-1">
-                        <img src="imagens/Verificado.png" alt="Verificado">
-                    <span>Agile web design and development methodology</span>
-                    </div>
-                    <div class="difernciais-2">
-                        <img src="imagens/Verificado.png" alt="Verificado">
-                        <span>Award winning web solutions and sites</span>
-                    </div>
-                    <div class="difernciais-3">
-                        <img src="imagens/Verificado.png" alt="Verificado">
-                        <span>Competitive rates for web design and development talent</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sobre-nos">
-            <h2>Why we are different from other startups in this space</h2>
-            <p>With us you can create a mobile app for your business in 2 weeks as well as create a website for your business in 2 days.</p>
-            <div class=" card nosso-time">
-                <img src="imagens/Perfil-1.png" alt="Imagem de Perfil">
-                <img src="imagens/Perfil-2.png" alt="Imagem de Perfil">
-                <img src="imagens/Perfil-3.png" alt="Imagem de Perfil">
-                <h3>1.289</h3>
-                <span>Our Remote Team</span>
-            </div>
-
-            <div class="card visitantes">
-                <img src="imagens/Imagem-visitantes.png" alt="Imagem de uma reunião">
-                <div class="card total-visitantes">
-                    <h3>$8,901</h3>
-                    <p>Total Visitors</p>
-                    <div class="estatistica-verde">
-                        <img src="imagens/arrow-up.png" alt="Seta para cima">
-                        <span>37.8%</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="marcas">
-            <img src="imagens/Uber-Eats.png" alt="Logo Uber Eats">
-            <img src="imagens/Jeep.png" alt="Logo Jeep">
-            <img src="imagens/Amazon.png" alt="Logo Amazon">
-            <img src="imagens/Bitcoin.png" alt="Logo Bitcoin">
-            <img src="imagens/HubSpot.png" alt="Logo HubSpot">
-            <img src="imagens/Stripe.png" alt="Logo Stripe">
-        </section>
-
-        <section class="testemunhas">
-            <h2>Customer is Our Top Priority</h2>
-            <p>We survey all of our clients, the results of which go directly to our CEO.</p>
-            <div class="moldura-imagem">
-                <img src="imagens/Imagem-Testemunha.png" alt="Imagem de uma pessoa">
-                <img src="imagens/Asterisco.png" alt="Asterisco">
-            </div>
-            <div class="comentario">
-                <h3>“Amazing experience working together Coca Team. They are very passionate.” </h3>
-                <h3><hr> Suaka Marga Satwa</h3>
-                <p>Product Manager, Qnet</p>
-                <img src="imagens/Slidebar.png" alt="Slidebar">
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="inicio">
-                    <h2>Ready to get started ?</h2>
-                    <p>If there are questions you want to ask, we will answer all your question</p>
-                </div>
-        
-                <div class="email">
-                    <label for="email-input">Enter your email</label>
-                    <input type="email" id="email-input" placeholder="Enter your email">
-                    <button class="btn">Join now</button>
-                </div>
-        
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook">
-                        <img src="imagens/Face.png" alt="Facebook">
-                    </a>
-                    <a href="#" aria-label="Twitter">
-                        <img src="imagens/Twitter.png" alt="Twitter">
-                    </a>
-                    <a href="#" aria-label="Instagram">
-                        <img src="imagens/Insta.png" alt="Instagram">
-                    </a>
-                    <a href="#" aria-label="LinkedIn">
-                        <img src="imagens/Linkedin.png" alt="LinkedIn">
-                    </a>
-                </div>
-        
-                <div class="links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Support</a>
-                </div>
-        
-                <div class="copyright">
-                    <p>© Coca All Rights Reserved</p>
-                </div>
-            </div>
-        </footer>
-    </main>
+	<div class="footer">
+		<b class="footer__title">Ready to get started ?</b>
+		<div class="footer__description">If there are questions you want to ask, we will answer all your question</div>
+		<div class="footer__subscription">
+			<div class="footer__subscription-button">
+				<b class="footer__subscription-text">Join now</b>
+			</div>
+			<div class="footer__subscription-input">Enter your email</div>
+			<div class="footer__subscription-divider"></div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__content">
+				<div class="footer__social">
+					<div class="footer__social-item">
+						<img class="footer__social-icon" alt="" src="imagens/Face.png">
+					</div>
+					<div class="footer__social-item">
+						<img class="footer__social-icon" alt="" src="imagens/Twitter.png">
+					</div>
+					<div class="footer__social-item">
+						<img class="footer__social-icon" alt="" src="imagens/Insta.png">
+					</div>
+					<div class="footer__social-item">
+						<img class="footer__social-icon" alt="" src="imagens/linkedin.png">
+					</div>
+				</div>
+				<div class="footer__navigation">
+					<div class="footer__navigation-link">Privacy Policy</div>
+					<div class="footer__navigation-link">Terms & Conditions</div>
+					<div class="footer__navigation-link">Support</div>
+				</div>
+			</div>
+			<div class="footer__copyright">© Coca All Rights Reserved</div>
+		</div>
+	</div>
 </body>
 </html>

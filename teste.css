@@ -32,7 +32,7 @@ body {
   	font-family: Inter;
 }
 
-.coca-icon {
+.hero__logo-coca {
   	position: absolute;
   	height: 32%;
   	width: 61.5%;
@@ -43,7 +43,7 @@ body {
   	overflow: hidden;
   	max-height: 100%;
 }
-.logo-child {
+.hero__logo-main {
   	position: absolute;
   	height: 63.6%;
   	width: 30%;
@@ -54,14 +54,14 @@ body {
   	overflow: hidden;
   	max-height: 100%;
 }
-.logo {
+.hero__logo {
   	position: absolute;
   	top: 0.75rem;
   	left: 1.25rem;
   	width: 7.5rem;
   	height: 3.54rem;
 }
-.align-justify-icon {
+.hero__menu-icon {
   	position: absolute;
   	top: 1.75rem;
   	left: 20.7rem;
@@ -69,7 +69,7 @@ body {
   	height: 1.5rem;
   	overflow: hidden;
 }
-.cyborg-hand-finger-background-icon {
+.hero__background-image {
   	position: absolute;
   	top: 11.875rem;
   	left: 2.375rem;
@@ -77,31 +77,31 @@ body {
   	height: 15.375rem;
   	object-fit: cover;
 }
-.frame-child {
-  	width: 1.44rem;
+.hero__slogan-icon {
+  	width: 1.45rem;
   	position: relative;
   	height: 1.8rem;
 }
-.world-best-startup {
+.hero__slogan-text {
   	position: relative;
   	line-height: 160%;
   	font-weight: 500;
 }
-.vector-parent {
+.hero__slogan-content {
   	display: flex;
   	flex-direction: row;
   	align-items: center;
   	justify-content: flex-start;
   	gap: 0.5rem;
 }
-.frame-item {
+.hero__slogan-frame {
   	width: 4.375rem;
   	position: relative;
   	border-top: 1px solid #fff;
   	box-sizing: border-box;
   	height: 0.06rem;
 }
-.frame-parent {
+.hero__slogan {
   	position: absolute;
   	top: 8.5rem;
   	left: 1.25rem;
@@ -111,10 +111,10 @@ body {
   	justify-content: flex-start;
   	gap: 0.5rem;
 }
-.best-tech {
+.hero__headline-text {
   	margin: 0;
 }
-.best-tech-startup-container {
+.hero__headline {
   	position: absolute;
   	top: 21.44rem;
   	left: 1.3rem;
@@ -125,7 +125,8 @@ body {
   	font-family: Urbanist;
   	width: 21.19rem;
 }
-.coca-is-a {
+
+.hero__description{
   	position: absolute;
   	top: 36.5rem;
   	left: 1.3rem;
@@ -135,7 +136,8 @@ body {
   	color: var(--text-light);
   	width: 19.4rem;
 }
-.icon {
+
+.hero__button-pd {
   	width: 1.25rem;
   	position: relative;
   	height: 1.25rem;
@@ -143,19 +145,20 @@ body {
   	flex-shrink: 0;
   	display: none;
 }
-.meet-the-expert {
+
+.hero__button-text {
   	flex: 1;
   	position: relative;
   	line-height: 150%;
 }
-.arrow-up-right-icon {
+.hero__button-arrow {
   	width: 1.5rem;
   	position: relative;
   	height: 1.5rem;
   	overflow: hidden;
   	flex-shrink: 0;
 }
-.button {
+.hero__button {
   	position: absolute;
   	top: 42rem;
   	left: 1.3rem;
@@ -172,7 +175,7 @@ body {
   	text-align: center;
   	color: var(--text-black);
 }
-.today-were-a {
+.hero__info-text {
   	position: absolute;
   	top: 0rem;
   	left: 6.9rem;
@@ -181,14 +184,14 @@ body {
   	display: inline-block;
   	width: 13.75rem;
 }
-.group-child {
+.hero__info-arrow {
   	position: absolute;
   	top: 1.3rem;
   	left: 0rem;
   	width: 5.1rem;
   	height: 0rem;
 }
-.today-were-a-team-of-200-wh-parent {
+.hero__info-under {
   	position: absolute;
   	top: 49.625rem;
   	left: 1.3rem;
@@ -204,6 +207,10 @@ body {
   	overflow: hidden;
   	flex-shrink: 0;
 }
+
+
+
+
 .delivering-tech-solutions {
   	width: 20.5rem;
   	position: relative;
