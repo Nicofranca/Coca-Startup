@@ -32,13 +32,23 @@ body {
   	font-family: Inter;
 }
 
-/* HEADER STYLES */
+/* ============================================
+   HEADER BLOCK
+============================================ */
 .header {
     position: relative;
     width: auto;
     height: auto; 
     background-color: var(--background-color-1);
     z-index: 1; 
+}
+
+.header__logo {
+    position: absolute;
+    top: 0.75rem;
+    left: 1.25rem;
+    width: 7.5rem;
+    height: 3.54rem;
 }
 
 .header__logo-image--coca {
@@ -53,7 +63,6 @@ body {
     max-height: 100%;
 }
 
-
 .header__logo-image--main {
     position: absolute;
     height: 63.6%;
@@ -66,15 +75,6 @@ body {
     max-height: 100%;
 }
 
-
-.header__logo {
-    position: absolute;
-    top: 0.75rem;
-    left: 1.25rem;
-    width: 7.5rem;
-    height: 3.54rem;
-}
-
 .header__menu-icon {
     position: absolute;
     top: 1.75rem;
@@ -84,6 +84,17 @@ body {
     overflow: hidden;
 }
 
+/* ============================================
+   HERO BLOCK
+============================================ */
+.hero {
+  	width: 23.4rem;
+  	position: relative;
+  	background-color: var(--background-color-1);
+  	height: 59.813rem;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
 
 .hero__background-image {
   	position: absolute;
@@ -93,30 +104,7 @@ body {
   	height: 15.375rem;
   	object-fit: cover;
 }
-.hero__slogan-icon {
-  	width: 1.45rem;
-  	position: relative;
-  	height: 1.8rem;
-}
-.hero__slogan-text {
-  	position: relative;
-  	line-height: 160%;
-  	font-weight: 500;
-}
-.hero__slogan-content {
-  	display: flex;
-  	flex-direction: row;
-  	align-items: center;
-  	justify-content: flex-start;
-  	gap: 0.5rem;
-}
-.hero__slogan-frame {
-  	width: 4.375rem;
-  	position: relative;
-  	border-top: 1px solid #fff;
-  	box-sizing: border-box;
-  	height: 0.06rem;
-}
+
 .hero__slogan {
   	position: absolute;
   	top: 8.5rem;
@@ -127,9 +115,35 @@ body {
   	justify-content: flex-start;
   	gap: 0.5rem;
 }
-.hero__headline-text {
-  	margin: 0;
+
+.hero__slogan-content {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 0.5rem;
 }
+
+.hero__slogan-icon {
+  	width: 1.45rem;
+  	position: relative;
+  	height: 1.8rem;
+}
+
+.hero__slogan-text {
+  	position: relative;
+  	line-height: 160%;
+  	font-weight: 500;
+}
+
+.hero__slogan-frame {
+  	width: 4.375rem;
+  	position: relative;
+  	border-top: 1px solid #fff;
+  	box-sizing: border-box;
+  	height: 0.06rem;
+}
+
 .hero__headline {
   	position: absolute;
   	top: 21.44rem;
@@ -140,6 +154,10 @@ body {
   	display: inline-block;
   	font-family: Urbanist;
   	width: 21.19rem;
+}
+
+.hero__headline-text {
+  	margin: 0;
 }
 
 .hero__description{
@@ -153,27 +171,6 @@ body {
   	width: 19.4rem;
 }
 
-.hero__button-pd {
-  	width: 1.25rem;
-  	position: relative;
-  	height: 1.25rem;
-  	overflow: hidden;
-  	flex-shrink: 0;
-  	display: none;
-}
-
-.hero__button-text {
-  	flex: 1;
-  	position: relative;
-  	line-height: 150%;
-}
-.hero__button-arrow {
-  	width: 1.5rem;
-  	position: relative;
-  	height: 1.5rem;
-  	overflow: hidden;
-  	flex-shrink: 0;
-}
 .hero__button {
   	position: absolute;
   	top: 42rem;
@@ -191,6 +188,39 @@ body {
   	text-align: center;
   	color: var(--text-black);
 }
+
+.hero__button-padding {
+  	width: 1.25rem;
+  	position: relative;
+  	height: 1.25rem;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: none;
+}
+
+.hero__button-text {
+  	flex: 1;
+  	position: relative;
+  	line-height: 150%;
+}
+
+.hero__button-arrow {
+  	width: 1.5rem;
+  	position: relative;
+  	height: 1.5rem;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+
+.hero__info-under {
+  	position: absolute;
+  	top: 49.625rem;
+  	left: 1.3rem;
+  	width: 20.7rem;
+  	height: 6.5rem;
+  	color: #97baff;
+}
+
 .hero__info-text {
   	position: absolute;
   	top: 0rem;
@@ -200,6 +230,7 @@ body {
   	display: inline-block;
   	width: 13.75rem;
 }
+
 .hero__info-arrow {
   	position: absolute;
   	top: 1.3rem;
@@ -207,42 +238,22 @@ body {
   	width: 5.1rem;
   	height: 1rem;
 }
-.hero__info-under {
-  	position: absolute;
-  	top: 49.625rem;
-  	left: 1.3rem;
-  	width: 20.7rem;
-  	height: 6.5rem;
-  	color: #97baff;
-}
-.hero {
+
+/* ============================================
+   ABOUT-US BLOCK
+============================================ */
+.about-us {
   	width: 23.4rem;
   	position: relative;
-  	background-color: var(--background-color-1);
-  	height: 59.813rem;
+  	background-color: var(--primary-color);
+  	height: 69.625rem;
   	overflow: hidden;
   	flex-shrink: 0;
+  	font-size: 0.75rem;
+  	color: var(--text-black);
 }
 
-
-
-.delivering-tech-solutions {
-  	width: 20.5rem;
-  	position: relative;
-  	line-height: 110%;
-  	display: inline-block;
-}
-.we-are-a {
-  	width: 20.5rem;
-  	position: relative;
-  	font-size: 1rem;
-  	line-height: 160%;
-  	font-weight: 500;
-  	font-family: Inter;
-  	color: var(--text-gray);
-  	display: inline-block;
-}
-.delivering-tech-solutions-parent {
+.about-us__intro {
   	position: absolute;
   	top: 4.5rem;
   	left: 1.5rem;
@@ -254,7 +265,35 @@ body {
   	font-size: 2.5rem;
   	font-family: Urbanist;
 }
-.group-item {
+
+.about-us__intro-title {
+  	width: 20.5rem;
+  	position: relative;
+  	line-height: 110%;
+  	display: inline-block;
+}
+
+.about-us__intro-description {
+  	width: 20.5rem;
+  	position: relative;
+  	font-size: 1rem;
+  	line-height: 160%;
+  	font-weight: 500;
+  	font-family: Inter;
+  	color: var(--text-gray);
+  	display: inline-block;
+}
+
+.about-us__card--main {
+  	position: absolute;
+  	top: 16.875rem;
+  	left: 1.5rem;
+  	width: 20.4rem;
+  	height: 23rem;
+  	font-size: 1rem;
+}
+
+.about-us__card-image {
   	position: absolute;
   	top: 0rem;
   	left: 0rem;
@@ -263,7 +302,8 @@ body {
   	height: 23.06rem;
   	object-fit: cover;
 }
-.group-inner {
+
+.about-us__card-overlay {
   	position: absolute;
   	top: 0rem;
   	left: 0rem;
@@ -273,12 +313,12 @@ body {
   	height: 16.9rem;
   	opacity: 0.6;
 }
-.button1 {
+
+.about-us__card-button {
   	position: absolute;
   	top: 18rem;
   	left: 1.9rem;
   	border-radius: 8px;
-  	background-color: var(--secund-color);
   	width: 15.75rem;
   	display: flex;
   	flex-direction: row;
@@ -287,9 +327,16 @@ body {
   	padding: 1rem 1.5rem;
   	box-sizing: border-box;
   	gap: 0.75rem;
-  	text-align: center;
 }
-.leveraging-tech-to {
+
+.about-us__card-button--main {
+	background-color: var(--secund-color);
+	width: 15.8rem;
+  	height: 3.25rem;
+  	color: var(--text-black);
+}
+
+.about-us__card-title {
   	position: absolute;
   	top: 4.1rem;
   	left: 1.9rem;
@@ -300,7 +347,8 @@ body {
   	color: var(--text-light);
   	width: 16.8rem;
 }
-.ready-for-future {
+
+.about-us__card-subtitle {
   	position: absolute;
   	top: 2rem;
   	left: 1.9rem;
@@ -310,15 +358,16 @@ body {
   	font-weight: 500;
   	color: var(--text-green);
 }
-.rectangle-parent {
+
+.about-us__card--workflow {
   	position: absolute;
-  	top: 16.875rem;
-  	left: 1.5rem;
-  	width: 20.4rem;
-  	height: 23rem;
-  	font-size: 1rem;
+  	top: 40.9rem;
+  	left: 11.9rem;
+  	width: 10rem;
+  	height: 11.5rem;
 }
-.child {
+
+.about-us__card--workflow .about-us__card-background {
   	position: absolute;
   	top: 0rem;
   	left: 0rem;
@@ -327,7 +376,8 @@ body {
   	width: 10rem;
   	height: 11.5rem;
 }
-.its-a-must {
+
+.about-us__card--workflow .about-us__card-description {
   	position: absolute;
   	top: 1rem;
   	left: 1rem;
@@ -335,7 +385,8 @@ body {
   	display: inline-block;
   	width: 8rem;
 }
-.see-our-workflow {
+
+.about-us__card--workflow .about-us__card-text {
   	position: absolute;
   	top: 0rem;
   	left: 0rem;
@@ -343,7 +394,12 @@ body {
   	display: inline-block;
   	width: 6.4rem;
 }
-.arrow-up-right-icon2 {
+
+.about-us__card-text--especial{
+  	left: 0rem;
+}
+
+.about-us__card--workflow .about-us__card-arrow {
   	position: absolute;
   	top: 1.5rem;
   	left: 7rem;
@@ -351,7 +407,8 @@ body {
   	height: 1.5rem;
   	overflow: hidden;
 }
-.button2 {
+
+.about-us__card--workflow .about-us__card-button {
   	position: absolute;
   	top: 7.25rem;
   	left: 1rem;
@@ -360,22 +417,26 @@ body {
   	font-size: 1.5rem;
   	font-family: Urbanist;
 }
-.div {
+
+.about-us__card--blog {
   	position: absolute;
   	top: 40.9rem;
-  	left: 11.9rem;
+  	left: 1.5rem;
   	width: 10rem;
   	height: 11.5rem;
 }
-.item {
-  	position: absolute;
 
+.about-us__card--blog .about-us__card-background {
+  	position: absolute;
+  	top: 0rem;
+  	left: 0rem;
   	border-radius: 16px;
   	background-color: var(--card-1);
   	width: 10rem;
   	height: 11.5rem;
 }
-.we-have-share {
+
+.about-us__card--blog .about-us__card-description {
   	position: absolute;
   	top: 1rem;
   	left: 1rem;
@@ -383,22 +444,54 @@ body {
   	display: inline-block;
   	width: 7.8rem;
 }
-.div1 {
-  	position: absolute;
-  	top: 40.9rem;
-  	left: 1.5rem;
-  	width: 10rem;
-  	height: 11.5rem;
-}
-.inner {
-  	position: absolute;
 
+.about-us__card--blog .about-us__card-button {
+  	position: absolute;
+  	top: 7.25rem;
+  	left: 1rem;
+  	width: 8.5rem;
+  	height: 3.25rem;
+  	font-size: 1.5rem;
+  	font-family: Urbanist;
+}
+
+.about-us__card--blog .about-us__card-text {
+  	position: absolute;
+  	top: 0rem;
+  	left: 0rem;
+  	line-height: 110%;
+  	display: inline-block;
+  	width: 6.4rem;
+}
+
+.about-us__card--blog .about-us__card-arrow {
+  	position: absolute;
+  	top: 1.5rem;
+  	left: 7rem;
+  	width: 1.5rem;
+  	height: 1.5rem;
+  	overflow: hidden;
+}
+
+.about-us__card--team {
+  	position: absolute;
+  	top: 53.4rem;
+  	left: 1.5rem;
+  	width: 20.4rem;
+  	height: 11.4rem;
+}
+
+.about-us__card--team .about-us__card-background {
+  	position: absolute;
+  	top: 0rem;
+  	left: 0rem;
   	border-radius: 16px;
   	background-color: var(--card-3);
   	width: 20.4rem;
   	height: 11.4rem;
 }
-.our-team-members {
+
+.about-us__card--team .about-us__card-description {
   	position: absolute;
   	top: 1rem;
   	left: 1rem;
@@ -406,13 +499,15 @@ body {
   	display: inline-block;
   	width: 18.5rem;
 }
-.meet-our-expert {
+
+.about-us__card--team .about-us__card-text {
   	position: absolute;
   	line-height: 110%;
   	display: inline-block;
   	width: 15.5rem;
 }
-.arrow-up-right-icon4 {
+
+.about-us__card--team .about-us__card-arrow {
   	position: absolute;
   	top: 0.3rem;
   	left: 17.4rem;
@@ -420,7 +515,8 @@ body {
   	height: 1.5rem;
   	overflow: hidden;
 }
-.button4 {
+
+.about-us__card--team .about-us__card-button {
   	position: absolute;
   	top: 8.3rem;
   	left: 1rem;
@@ -429,108 +525,10 @@ body {
   	font-size: 2rem;
   	font-family: Urbanist;
 }
-.div2 {
-  	position: absolute;
-  	top: 53.4rem;
-  	left: 1.5rem;
-  	width: 20.4rem;
-  	height: 11.4rem;
-}
-.about-us {
-  	width: 23.4rem;
-  	position: relative;
-  	background-color: var(--primary-color);
-  	height: 69.625rem;
-  	overflow: hidden;
-  	flex-shrink: 0;
-  	font-size: 0.75rem;
-  	color: var(--text-black);
-}
-.how-we-plan {
-  	width: 20.7rem;
-  	position: relative;
-  	font-size: 2.5rem;
-  	line-height: 110%;
-  	display: inline-block;
-  	font-family: Urbanist;
-}
-.were-based-in {
-  	width: 20.5rem;
-  	position: relative;
-  	line-height: 160%;
-  	font-weight: 500;
-  	color: var(--text-gray);
-  	display: inline-block;
-}
-.check-item-text-child {
-  	width: 1.375rem;
-  	position: relative;
-  	height: 1.375rem;
-}
-.agile-web-design {
-  	width: 18.125rem;
-  	position: relative;
-  	line-height: 160%;
-  	font-weight: 500;
-  	display: inline-block;
-  	flex-shrink: 0;
-}
-.check-item-text {
-  	display: flex;
-  	flex-direction: row;
-  	align-items: center;
-  	justify-content: flex-start;
-  	gap: 0.75rem;
-}
-.award-winning-web {
-  	width: 17.5rem;
-  	position: relative;
-  	line-height: 160%;
-  	font-weight: 500;
-  	display: inline-block;
-  	flex-shrink: 0;
-}
-.competitive-rates-for {
-  	width: 18.5rem;
-  	position: relative;
-  	line-height: 160%;
-  	font-weight: 500;
-  	display: inline-block;
-  	flex-shrink: 0;
-}
-.content {
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	justify-content: flex-start;
-  	gap: 1rem;
-}
-.how-we-plan-to-disrupt-the-ind-parent {
-  	position: absolute;
-  	top: 26.8rem;
-  	left: 1.5rem;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	justify-content: center;
-  	gap: 1rem;
-}
-.sales-light {
-  	position: absolute;
-  	top: 0rem;
-  	left: 0rem;
-  	width: 23.4rem;
-  	height: 17.125rem;
-  	object-fit: cover;
-}
-.statistic-light {
-  	position: absolute;
-  	top: 16rem;
-  	left: 0rem;
-  	width: 23.4rem;
-  	height: 9.9rem;
-  	object-fit: cover;
-}
+
+/* ============================================
+   FEATURES BLOCK
+============================================ */
 .features {
   	width: 23.4rem;
   	position: relative;
@@ -540,54 +538,136 @@ body {
   	flex-shrink: 0;
   	color: var(--text-black);
 }
-.why-we-are {
-  	width: 20.3rem;
+
+.features__content {
+  	position: absolute;
+  	top: 26.8rem;
+  	left: 1.5rem;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	gap: 1rem;
+}
+
+.features__title {
+  	width: 20.7rem;
   	position: relative;
+  	font-size: 2.5rem;
   	line-height: 110%;
   	display: inline-block;
+  	font-family: Urbanist;
 }
-.with-us-you {
-  	width: 20.3rem;
+
+.features__description {
+  	width: 20.5rem;
   	position: relative;
-  	font-size: 1rem;
   	line-height: 160%;
   	font-weight: 500;
-  	font-family: Inter;
   	color: var(--text-gray);
   	display: inline-block;
 }
-.heading-and-subheading {
+
+.features__list {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 1rem;
+}
+
+.features__item {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 0.75rem;
+}
+
+.features__item-icon {
+  	width: 1.375rem;
+  	position: relative;
+  	height: 1.375rem;
+}
+
+.features__item-text {
+  	position: relative;
+  	line-height: 160%;
+  	font-weight: 500;
+  	display: inline-block;
+}
+
+.features__image--sales {
+  	position: absolute;
+  	top: 0rem;
+  	left: 0rem;
+  	width: 23.4rem;
+  	height: 17.125rem;
+  	object-fit: cover;
+}
+
+.features__image--statistic {
+  	position: absolute;
+  	top: 16rem;
+  	left: 0rem;
+  	width: 23.4rem;
+  	height: 9.9rem;
+  	object-fit: cover;
+}
+
+/* ============================================
+   WHY-US BLOCK
+============================================ */
+.why-us {
+  	width: 23.4rem;
+  	position: relative;
+  	background-color: var(--primary-color);
+  	height: 58.375rem;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	font-size: 2.5rem;
+  	color: var(--text-black);
+  	font-family: Urbanist;
+}
+
+.why-us__content {
+  	position: absolute;
+  	top: 4rem;
+  	left: 1.5rem;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 2.5rem;
+}
+
+.why-us__header {
   	display: flex;
   	flex-direction: column;
   	align-items: flex-start;
   	justify-content: flex-start;
   	gap: 1.5rem;
 }
-.image-icon {
-  	width: 7.5rem;
+
+.why-us__title {
+  	width: 20.3rem;
   	position: relative;
-  	height: 3.375rem;
-  	object-fit: cover;
+  	line-height: 110%;
+  	display: inline-block;
 }
-.b {
-  	position: relative;
-  	line-height: 150%;
-}
-.our-remote-team {
+
+.why-us__description {
+  	width: 20.3rem;
   	position: relative;
   	font-size: 1rem;
   	line-height: 160%;
   	font-weight: 500;
   	font-family: Inter;
   	color: var(--text-gray);
+  	display: inline-block;
 }
-.number-and-text {
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	justify-content: flex-start;
-}
-.content1 {
+
+.why-us__info {
   	width: 20.5rem;
   	box-shadow: 20px 40px 80px rgba(45, 51, 81, 0.12);
   	border-radius: 16px;
@@ -603,17 +683,36 @@ body {
   	font-size: 1.5rem;
   	font-family: Archivo;
 }
-.contenr {
-  	position: absolute;
-  	top: 4rem;
-  	left: 1.5rem;
+
+.why-us__info-icon {
+  	width: 7.5rem;
+  	position: relative;
+  	height: 3.375rem;
+  	object-fit: cover;
+}
+
+.why-us__info-data {
   	display: flex;
   	flex-direction: column;
   	align-items: flex-start;
   	justify-content: flex-start;
-  	gap: 2.5rem;
 }
-.image-icon1 {
+
+.why-us__info-number {
+  	position: relative;
+  	line-height: 150%;
+}
+
+.why-us__info-text {
+  	position: relative;
+  	font-size: 1rem;
+  	line-height: 160%;
+  	font-weight: 500;
+  	font-family: Inter;
+  	color: var(--text-gray);
+}
+
+.why-us__image {
   	position: absolute;
   	top: 32.7rem;
   	left: 1.5rem;
@@ -621,54 +720,8 @@ body {
   	height: 21.25rem;
   	object-fit: cover;
 }
-.income-in-this {
-  	position: absolute;
-  	width: 100%;
-  	top: calc(50% + 1px);
-  	left: 0%;
-  	letter-spacing: 0.1px;
-  	line-height: 1.25rem;
-  	display: inline-block;
-  	height: 1.125rem;
-}
-.ui-icon-16up {
-  	width: 0.75rem;
-  	position: relative;
-  	height: 0.75rem;
-  	overflow: hidden;
-  	flex-shrink: 0;
-}
-.b1 {
-  	position: relative;
-  	letter-spacing: -0.01em;
-  	line-height: 1rem;
-}
-.component-1 {
-  	position: absolute;
-  	top: 4.875rem;
-  	border-radius: 4px;
-  	background-color: #eafae5;
-  	display: flex;
-  	flex-direction: row;
-  	align-items: center;
-  	justify-content: center;
-  	padding: 0.25rem;
-  	gap: 0.25rem;
-  	color: #60d39c;
-}
-.b2 {
-  	position: absolute;
-  	top: calc(50% - 51px);
-  	font-size: 1.5rem;
-  	line-height: 120%;
-  	color: var(--text-black);
-}
-.income-in-this-perio-parent {
-  	width: 7.75rem;
-  	position: relative;
-  	height: 6.375rem;
-}
-.overview-mobile {
+
+.why-us__overview {
   	position: absolute;
   	top: 45.2rem;
   	left: 12.7rem;
@@ -688,7 +741,61 @@ body {
   	color: var(--text-gray);
   	font-family: Inter;
 }
-.icon-play {
+
+.why-us__overview-content {
+  	width: 7.75rem;
+  	position: relative;
+  	height: 6.375rem;
+}
+
+.why-us__overview-label {
+  	position: absolute;
+  	width: 100%;
+  	top: calc(50% + 1px);
+  	left: 0%;
+  	letter-spacing: 0.1px;
+  	line-height: 1.25rem;
+  	display: inline-block;
+  	height: 1.125rem;
+}
+
+.why-us__overview-growth {
+  	position: absolute;
+  	top: 4.875rem;
+  	border-radius: 4px;
+  	background-color: #eafae5;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 0.25rem;
+  	gap: 0.25rem;
+  	color: #60d39c;
+}
+
+.why-us__overview-arrow {
+  	width: 0.75rem;
+  	position: relative;
+  	height: 0.75rem;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+
+.why-us__overview-percentage {
+  	position: relative;
+  	letter-spacing: -0.01em;
+  	line-height: 1rem;
+}
+
+.why-us__overview-value {
+  	position: absolute;
+  	top: calc(50% - 51px);
+  	font-size: 1.5rem;
+  	line-height: 120%;
+  	color: var(--text-black);
+}
+
+.why-us__play-icon {
   	position: absolute;
   	top: 41.4rem;
   	left: 9.875rem;
@@ -697,33 +804,20 @@ body {
   	height: 3.75rem;
   	object-fit: cover;
 }
-.why-us {
+
+/* ============================================
+   BRANDS BLOCK
+============================================ */
+.brands {
   	width: 23.4rem;
   	position: relative;
   	background-color: var(--primary-color);
-  	height: 58.375rem;
-  	overflow: hidden;
-  	flex-shrink: 0;
-  	font-size: 2.5rem;
-  	color: var(--text-black);
-  	font-family: Urbanist;
-}
-.brand-child {
-  	width: 8.25rem;
-  	position: relative;
-  	height: 5.6rem;
+  	height: 19rem;
   	overflow: hidden;
   	flex-shrink: 0;
 }
-.brand-item {
-  	width: 8.25rem;
-  	position: relative;
-  	height: 5.625rem;
-  	overflow: hidden;
-  	flex-shrink: 0;
-  	object-fit: cover;
-}
-.brand {
+
+.brands__row--top {
   	position: absolute;
   	top: 2.875rem;
   	left: -0.8rem;
@@ -733,7 +827,8 @@ body {
   	justify-content: flex-start;
   	gap: 0.125rem;
 }
-.brand1 {
+
+.brands__row--bottom {
   	position: absolute;
   	top: 10.375rem;
   	left: -0.75rem;
@@ -743,112 +838,19 @@ body {
   	justify-content: flex-start;
   	gap: 0.125rem;
 }
-.brands {
-  	width: 23.4rem;
+
+.brands__logo {
+  	width: 8.25rem;
   	position: relative;
-  	background-color: var(--primary-color);
-  	height: 19rem;
+  	height: 5.6rem;
   	overflow: hidden;
   	flex-shrink: 0;
+  	object-fit: cover;
 }
-.customer-is-our {
-  	width: 19.7rem;
-  	position: relative;
-  	line-height: 110%;
-  	display: inline-block;
-}
-.we-survey-all {
-  	width: 19.7rem;
-  	position: relative;
-  	font-size: 1rem;
-  	line-height: 160%;
-  	font-weight: 500;
-  	font-family: Inter;
-  	display: inline-block;
-}
-.heading-and-subheading1 {
-  	position: absolute;
-  	top: 3.5rem;
-  	left: 1.875rem;
-  	width: 19.7rem;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	justify-content: flex-start;
-  	gap: 1rem;
-}
-.image-icon2 {
-  	position: absolute;
-  	top: 15rem;
-  	left: 0.5rem;
-  	width: 22.275rem;
-  	height: 20.5rem;
-  	object-fit: contain;
-}
-.amazing-experience-working {
-  	width: 20rem;
-  	position: relative;
-  	line-height: 110%;
-  	display: inline-block;
-}
-.text {
-  	position: relative;
-  	line-height: 120%;
-}
-.supporting-text {
-  	position: relative;
-  	font-size: 1rem;
-  	line-height: 1.5rem;
-  	color: var(--text-light);
-}
-.name {
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	justify-content: flex-start;
-  	gap: 0.25rem;
-}
-.slidebar-child {
-  	width: 0.75rem;
-  	position: relative;
-  	border-radius: 50%;
-  	background-color: var(--primary-color);
-  	height: 0.75rem;
-}
-.slidebar-item {
-  	width: 0.75rem;
-  	position: relative;
-  	border-radius: 50%;
-  	background-color: rgba(255, 255, 255, 0.5);
-  	height: 0.75rem;
-}
-.slidebar {
-  	display: flex;
-  	flex-direction: row;
-  	align-items: flex-start;
-  	justify-content: flex-start;
-  	gap: 0.75rem;
-}
-.name-slidebar {
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	justify-content: flex-start;
-  	gap: 1.5rem;
-  	font-size: 1.125rem;
-  	font-family: Inter;
-}
-.section {
-  	position: absolute;
-  	top: 36.563rem;
-  	left: 1.875rem;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	justify-content: flex-start;
-  	gap: 1.937rem;
-  	font-size: 1.5rem;
-}
+
+/* ============================================
+   TESTIMONIALS BLOCK
+============================================ */
 .testimonials {
   	width: 23.438rem;
   	position: relative;
@@ -859,7 +861,130 @@ body {
   	font-size: 2.5rem;
   	font-family: Urbanist;
 }
-.ready-to-get {
+
+.testimonials__header {
+  	position: absolute;
+  	top: 3.5rem;
+  	left: 1.875rem;
+  	width: 19.7rem;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 1rem;
+}
+
+.testimonials__title {
+  	width: 19.7rem;
+  	position: relative;
+  	line-height: 110%;
+  	display: inline-block;
+}
+
+.testimonials__description {
+  	width: 19.7rem;
+  	position: relative;
+  	font-size: 1rem;
+  	line-height: 160%;
+  	font-weight: 500;
+  	font-family: Inter;
+  	display: inline-block;
+}
+
+.testimonials__image {
+  	position: absolute;
+  	top: 15rem;
+  	left: 0.5rem;
+  	width: 22.275rem;
+  	height: 20.5rem;
+  	object-fit: contain;
+}
+
+.testimonials__content {
+  	position: absolute;
+  	top: 36.563rem;
+  	left: 1.875rem;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 1.937rem;
+  	font-size: 1.5rem;
+}
+
+.testimonials__quote {
+  	width: 20rem;
+  	position: relative;
+  	line-height: 110%;
+  	display: inline-block;
+}
+
+.testimonials__author {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 1.5rem;
+  	font-size: 1.125rem;
+  	font-family: Inter;
+}
+
+.testimonials__author-info {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 0.25rem;
+}
+
+.testimonials__author-name {
+  	position: relative;
+  	line-height: 120%;
+}
+
+.testimonials__author-position {
+  	position: relative;
+  	font-size: 1rem;
+  	line-height: 1.5rem;
+  	color: var(--text-light);
+}
+
+.testimonials__pagination {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 0.75rem;
+}
+
+.testimonials__pagination-dot {
+  	width: 0.75rem;
+  	position: relative;
+  	border-radius: 50%;
+  	height: 0.75rem;
+}
+
+.testimonials__pagination-dot--active {
+  	background-color: var(--primary-color);
+}
+
+.testimonials__pagination-dot:not(.testimonials__pagination-dot--active) {
+  	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ============================================
+   FOOTER BLOCK
+============================================ */
+.footer {
+  	width: 23.438rem;
+  	position: relative;
+  	background-color: var(--text-black);
+  	height: 39.125rem;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+
+.footer__title {
   	position: absolute;
   	top: 3.125rem;
   	left: 2rem;
@@ -869,7 +994,8 @@ body {
   	font-family: Archivo;
   	width: 18.5rem;
 }
-.if-there-are {
+
+.footer__description {
   	position: absolute;
   	top: 8.875rem;
   	left: 2rem;
@@ -879,7 +1005,17 @@ body {
   	display: inline-block;
   	width: 19.5rem;
 }
-.button5 {
+
+.footer__subscription {
+  	position: absolute;
+  	top: 14.4rem;
+  	left: 2rem;
+  	width: 20.4rem;
+  	height: 7rem;
+  	text-align: center;
+}
+
+.footer__subscription-button {
   	position: absolute;
   	top: 3.5rem;
   	border-radius: 100px;
@@ -893,98 +1029,29 @@ body {
   	padding: 1rem 2rem;
   	box-sizing: border-box;
 }
-.enter-your-email {
+
+.footer__subscription-text {
+  	position: relative;
+  	line-height: 150%;
+}
+
+.footer__subscription-input {
   	position: absolute;
   	line-height: 150%;
   	font-weight: 500;
   	color: var(--text-gray);
   	text-align: left;
 }
-.divider {
+
+.footer__subscription-divider {
   	position: absolute;
   	top: 2.4rem;
   	border-top: 1px solid #757b8a;
   	box-sizing: border-box;
   	width: 20.5rem;
 }
-.subs {
-  	position: absolute;
-  	top: 14.4rem;
-  	left: 2rem;
-  	width: 20.4rem;
-  	height: 7rem;
-  	text-align: center;
-}
-.vector-icon {
-  	position: absolute;
-  	height: 99.5%;
-  	width: 100%;
-  	top: 0%;
-  	right: 0%;
-  	bottom: 0.5%;
-  	left: 0%;
-  	max-width: 100%;
-  	overflow: hidden;
-  	max-height: 100%;
-}
-.social-icon {
-  	width: 1.25rem;
-  	position: relative;
-  	height: 1.25rem;
-  	overflow: hidden;
-  	flex-shrink: 0;
-}
-.vector-icon1 {
-  	position: absolute;
-  	height: 81.5%;
-  	width: 100%;
-  	top: 9.37%;
-  	right: 0%;
-  	bottom: 9.13%;
-  	left: 0%;
-  	max-width: 100%;
-  	overflow: hidden;
-  	max-height: 100%;
-}
-.group-icon {
-  	position: absolute;
-  	height: 100%;
-  	width: 100%;
-  	top: 0%;
-  	right: 0%;
-  	bottom: 0%;
-  	left: 0%;
-  	max-width: 100%;
-  	overflow: hidden;
-  	max-height: 100%;
-}
-.social-media {
-  	display: flex;
-  	flex-direction: row;
-  	align-items: flex-start;
-  	justify-content: flex-start;
-  	gap: 1.5rem;
-}
-.privacy-policy {
-  	position: relative;
-  	line-height: 150%;
-  	font-weight: 500;
-}
-.footer-links {
-  	display: flex;
-  	flex-direction: row;
-  	align-items: flex-start;
-  	justify-content: center;
-  	gap: 1rem;
-}
-.content2 {
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	justify-content: center;
-  	gap: 2.5rem;
-}
-.content-parent {
+
+.footer__bottom {
   	position: absolute;
   	top: 26.125rem;
   	left: 1.5rem;
@@ -997,12 +1064,60 @@ body {
   	font-size: 0.875rem;
   	color: var(--text-gray);
 }
-.footer {
-  	width: 23.438rem;
+
+.footer__content {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	gap: 2.5rem;
+}
+
+.footer__social {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 1.5rem;
+}
+
+.footer__social-item {
+  	width: 1.25rem;
   	position: relative;
-  	background-color: var(--text-black);
-  	height: 39.125rem;
+  	height: 1.25rem;
   	overflow: hidden;
   	flex-shrink: 0;
 }
 
+.footer__social-icon {
+  	position: absolute;
+  	height: 99.5%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0.5%;
+  	left: 0%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+
+.footer__navigation {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: center;
+  	gap: 1rem;
+}
+
+.footer__navigation-link {
+  	position: relative;
+  	line-height: 150%;
+  	font-weight: 500;
+}
+
+.footer__copyright {
+  	position: relative;
+  	line-height: 150%;
+  	font-weight: 500;
+}
