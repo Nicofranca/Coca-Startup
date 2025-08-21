@@ -43,6 +43,12 @@ body {
 /* ============================================
    HEADER BLOCK
 ============================================ */
+
+.header__nav,
+.header__actions {
+  display: none;
+}
+
 .header {
   width: 100%;
   max-width: auto;
@@ -54,7 +60,6 @@ body {
   display: flex;                   /* ativa flexbox */
   align-items: center;             /* alinha no centro vertical */
   justify-content: space-between;  /* logo na esquerda, menu na direita */
-  padding: 0 1.25rem;              /* espaçamento interno */
 }
 
 /* Logo container */
@@ -65,6 +70,7 @@ body {
   width: auto;          /* deixa ajustar ao conteúdo */
   height: 2rem;         /* acompanha a altura do header */
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 /* Imagens da logo */
@@ -79,7 +85,7 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
-  margin-right: 2.5rem;
+  margin-right: 1rem;
   margin-top: 1rem;
 }
 
@@ -167,7 +173,7 @@ body {
 
 .hero__description {
   position: absolute;
-  top: 32.5rem;
+  top: 80vh;
   left: 7vw;
   right: 1.3rem;
   font-size: 2.1vh;
@@ -254,7 +260,7 @@ body {
 ============================================ */
 .about-us {
   width: 100%;
-  max-width: 23.4rem;
+  max-width: auto;
   margin: 0 auto;
   position: relative;
   background-color: var(--primary-color);
@@ -280,7 +286,7 @@ body {
 
 .about-us__intro-title {
   width: 100%;
-  max-width: 20.5rem;
+  max-width: auto;
   position: relative;
   line-height: 110%;
   display: inline-block;
@@ -288,7 +294,7 @@ body {
 
 .about-us__intro-description {
   width: 100%;
-  max-width: 20.5rem;
+  max-width: auto;
   position: relative;
   font-size: 1rem;
   line-height: 160%;
@@ -304,7 +310,7 @@ body {
   left: 1.5rem;
   right: 1.5rem;
   width: calc(100% - 3rem);
-  max-width: 20.4rem;
+  max-width: auto;
   height: 23rem;
   font-size: 1rem;
 }
@@ -382,7 +388,7 @@ body {
   top: 40.9rem;
   right: 1.5rem;
   width: min(10rem, calc(50% - 2rem));
-  height: 11.5rem;
+  height: auto;
 }
 
 .about-us__card--workflow .about-us__card-background {
@@ -393,6 +399,7 @@ body {
   background-color: var(--card-2);
   width: 100%;
   height: 11.5rem;
+  max-width: auto;
 }
 
 .about-us__card--workflow .about-us__card-description {
@@ -413,15 +420,19 @@ body {
   display: inline-block;
   width: calc(100% - 1rem);
 }
+.about-us__card-text{
+  min-width: 7rem;
+}
 
 .about-us__card-text--especial {
   left: 0rem;
+  min-width: 20rem;
 }
 
 .about-us__card--workflow .about-us__card-arrow {
   position: absolute;
   top: 1.5rem;
-  right: 1rem;
+  left: 6.6rem;
   width: 1.5rem;
   height: 1.5rem;
   overflow: hidden;
@@ -489,7 +500,7 @@ body {
 .about-us__card--blog .about-us__card-arrow {
   position: absolute;
   top: 1.5rem;
-  right: 1rem;
+  left: 6.6rem;
   width: 1.5rem;
   height: 1.5rem;
   overflow: hidden;
@@ -536,6 +547,7 @@ body {
   position: absolute;
   top: 0.3rem;
   right: 1rem;
+  left: 17rem;
   width: 1.5rem;
   height: 1.5rem;
   overflow: hidden;
@@ -557,7 +569,7 @@ body {
 ============================================ */
 .features {
   width: 100%;
-  max-width: 23.4rem;
+  max-width: auto;
   margin: 0 auto;
   position: relative;
   background-color: var(--primary-color);
@@ -632,6 +644,8 @@ body {
   top: 0rem;
   left: 0rem;
   width: 100%;
+  max-width: auto;
+  max-height: auto;
   height: 17.125rem;
   object-fit: cover;
 }
@@ -650,7 +664,7 @@ body {
 ============================================ */
 .why-us {
   width: 100%;
-  max-width: 23.4rem;
+  max-width: auto;
   margin: 0 auto;
   position: relative;
   background-color: var(--primary-color);
@@ -683,7 +697,7 @@ body {
 
 .why-us__title {
   width: 100%;
-  max-width: 20.3rem;
+  max-width: auto;
   position: relative;
   line-height: 110%;
   display: inline-block;
@@ -848,7 +862,7 @@ body {
 ============================================ */
 .brands {
   width: 100%;
-  max-width: 23.4rem;
+  max-width: auto;
   margin: 0 auto;
   position: relative;
   background-color: var(--primary-color);
@@ -892,7 +906,7 @@ body {
 ============================================ */
 .testimonials {
   width: 100%;
-  max-width: 23.438rem;
+  max-width: auto;
   margin: 0 auto;
   position: relative;
   background-color: var(--background-color-1);
@@ -908,7 +922,7 @@ body {
   left: 1.875rem;
   right: 1.875rem;
   width: calc(100% - 3.75rem);
-  max-width: 19.7rem;
+  max-width: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -939,7 +953,7 @@ body {
   left: 0.5rem;
   right: 0.5rem;
   width: calc(100% - 1rem);
-  max-width: 22.275rem;
+  max-width: auto;
   height: 20.5rem;
   object-fit: contain;
 }
@@ -1023,7 +1037,7 @@ body {
 ============================================ */
 .footer {
   width: 100%;
-  max-width: 23.438rem;
+  max-width: auto;
   margin: 0 auto;
   position: relative;
   background-color: var(--text-black);
@@ -1179,4 +1193,59 @@ body {
    MEDIA QUERIES PARA RESPONSIVIDADE
 ============================================ */
 
+@media (min-width: 1440px) {
+  
+  .header {
+    justify-content: space-between; 
+    align-items: center;
+  }
 
+  .header__menu-icon {
+    display: none;
+  }
+  
+  .header__nav {
+    display: flex; 
+    flex-grow: 1; 
+    justify-content: center; 
+  }
+
+  .header__nav-list {
+    display: flex;
+    gap: 2rem; 
+  }
+
+  .header__nav-link {
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem; /* 16px */
+  }
+  
+
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+  }
+
+  .header__button {
+    font-family: 'Inter', sans-serif;
+    padding: 0.75rem 1.5rem; 
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .header__button--signin {
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+
+  .header__button--getstarted {
+    background-color: var(--secund-color); 
+    color: var(--text-black); 
+  }
+
+}
