@@ -94,7 +94,7 @@ body {
   top: 1rem;
   transform: translateY(-14.3rem);
   width: calc(100% - 2.1rem);
-  max-width: 516px;
+  max-width: 400px;
   object-fit: cover;
   margin-left: auto; 
   height: auto;
@@ -159,10 +159,10 @@ body {
 
 .hero__description {
   position: absolute;
-  top: 36.5rem;
-  left: 1.3rem;
+  top: 32.5rem;
+  left: 7vw;
   right: 1.3rem;
-  font-size: 0.875rem;
+  font-size: 1.7vh;
   line-height: 150%;
   display: inline-block;
   color: var(--text-light);
@@ -171,7 +171,7 @@ body {
 
 .hero__button {
   position: absolute;
-  top: 42rem;
+  top: 38rem;
   left: 1.3rem;
   border-radius: 8px;
   background-color: var(--secund-color);
@@ -212,7 +212,7 @@ body {
 
 .hero__info-under {
   position: absolute;
-  top: 49.625rem;
+  top: 45rem;
   left: 1.3rem;
   right: 1.3rem;
   max-width: 20.7rem;
@@ -222,7 +222,7 @@ body {
 
 .hero__info-text {
   position: absolute;
-  top: 0rem;
+  top: 0.7rem;
   left: 6.9rem;
   right: 0rem;
   line-height: 160%;
@@ -1340,3 +1340,4 @@ body {
     width: 100%;
   }
 }
+
